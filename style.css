@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Karla", "Sans-serif";
+    font-size: 16px;
+}
+
+#container-wrapper {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(0, 0%, 86%);
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    min-width: 300px;
+    padding: 50px;
+    background-color: white;
+    border-radius: 20px;
+    border-bottom-right-radius: 150px;
+}
+
+.label-ctn {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.label-text {
+    color: grey;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+.input-ctn {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.input-box {
+    width: 100%;
+    max-width: 170px;
+    height: 60px;
+    border: 1px solid hsl(0, 0%, 86%);
+    border-radius: 8px;
+    padding: 20px;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.input-box::-webkit-inner-spin-button,
+.input-box::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+.input-box::placeholder {
+    font-family: "Karla", "Sans-serif";
+    font-size: 32px;
+    font-weight: 32px;
+    
+}
+
+.submit-ctn {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.line {
+    flex: 1;
+    height: 2px;
+    border: none;
+    background-color: hsl(0, 0%, 94%);
+}
+
+.submit-btn {
+    border: none;
+    border-radius: 50%;
+    background-color: black;
+    width: 75px;
+    height: 75px;
+    cursor: pointer;
+}
+
+.icon-arrow {
+    width: 40px;
+    height: auto;
+}
+
+.results {
+    list-style: none;
+    font-size: 100px;
+    font-weight: 900;
+    font-style: italic;
+    letter-spacing: -3px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sign {
+    color: hsl(259, 100%, 65%);
+    letter-spacing: 1px;
+    font-size: 100px;
+    margin-right: -10px;
+}
+
+.placeholder-design {
+    color: hsl(0, 100%, 67%);
+    font-size: 12px;
+    margin-top: 4px;
+    font-style: italic;
+}
+.hidden {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    #container-wrapper {
+        align-items: flex-start;
+        padding-top: 100px;
+    }
+
+    .input-ctn {
+        flex-direction: row;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .input-box {
+        padding: 2px;
+        font-size: 30px;
+        min-width: 90px;
+    }
+
+    .submit-ctn {
+        position: relative;
+        justify-content: center;
+        margin-top: 50px;
+        margin-bottom: 30px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .submit-btn {
+        position: absolute;
+        height: 60px;
+        width: 60px;
+    }
+
+    .sign{
+        font-size: 60px;
+        margin-right: -3px;
+    }
+
+    .results {
+        font-size: 60px;
+        line-height: 1.1;
+    }
+}
+  
+
+

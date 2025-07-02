@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <section id="container-wrapper">
+        <div class="container">
+            <div class="input-ctn">
+                <div class="date label-ctn">
+                    <label for="day" class="label-text">DAY</label>
+                    <input type="number" id="day" class="day input-box" placeholder="DD">
+                    <span class="day-error placeholder-design"></span>
+                </div>
+                <div class="month-ctn label-ctn">
+                    <label for="month" class="label-text">MONTH</label>
+                    <input type="number" id="month" class="month input-box" placeholder="MM">
+                    <span class="month-error placeholder-design"></span>
+                </div>
+                <div class="year-ctn label-ctn">
+                    <label for="year" class="label-text">YEAR</label>
+                    <input type="number" id="year" class="year input-box" placeholder="YYYY">
+                    <span class="year-error placeholder-design"></span>
+                </div>
+            </div>
+            <div class="submit-ctn">
+                <hr class="line">
+                <button class="submit-btn">
+                    <img src="icon-arrow.svg" alt="icon-arrow" class="icon-arrow"/>
+                </button>
+            </div>
+            <div class="result-ctn">
+                <ul class="results">
+                    <li class="result-yr">
+                        <span class="year-result sign">--</span>
+                        <span class="year-label">years</span>
+                    </li>
+                    <li class="result-mn">
+                        <span class="month-result sign">--</span>
+                        <span class="month-label">months</span>
+                    </li>
+                    <li class="result-dy">
+                        <span class="day-result sign">--</span>
+                        <span class="day-label">days</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
